@@ -1,7 +1,7 @@
 Lecture 6 - plan
 
-* [ ] Simple Express app
-* [ ] Static pages
+* [x] Simple Express app
+* [x] Static pages
 * [ ] Deployment 
   * [ ] GitHub Actions recap
   * [ ] Azure
