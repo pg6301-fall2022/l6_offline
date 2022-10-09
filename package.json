@@ -4,12 +4,12 @@
   "description": "Lecture 6 - plan",
   "main": "index.js",
   "scripts": {
-    "start:client" : "cd client && npm install",
-    "start:server": "cd server && npm start",
-    "build": "cd server && npm install",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "cd client && npm install --include=dev && npm run build",
+    "build:server": "cd server && npm install",
     "test": "jest --collectCoverage",
     "verify": "jest --collectCoverage",
-    "start": "npm run start:client && npm run start:server"
+    "start": "cd server && npm start"
   },
   "repository": {
     "type": "git",
