@@ -6,9 +6,20 @@
   "scripts": {
     "start": "cd server && npm start",
     "build": "cd server && npm install",
-    "test": ""
+    "test": "jest --collectCoverage",
+    "verify": "jest --collectCoverage"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "jest": {
+    "testEnvironment": "jsdom",
+    "collectCoverageFrom": [
+      "*.jsx"
+    ]
+  },
+  "dependencies": {
+    "jest": "^29.1.2",
+    "jest-environment-jsdom": "^29.1.2"
+  }
 }
