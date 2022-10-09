@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "Lecture 6 - plan",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "build": "npm run build:client && npm run build:server",
     "build:client": "cd client && npm install --include=dev && npm run build",
     "build:server": "cd server && npm install",
-    "test": "jest --collectCoverage",
-    "verify": "jest --collectCoverage",
+    "test": "jest",
+    "verify": "jest",
     "start": "cd server && npm start"
   },
   "repository": {
@@ -27,5 +28,9 @@
   "dependencies": {
     "jest": "^29.1.2",
     "jest-environment-jsdom": "^29.1.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.19.3",
+    "babel-jest": "^29.1.2"
   }
 }
