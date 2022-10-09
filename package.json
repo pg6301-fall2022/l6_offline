@@ -4,10 +4,16 @@
   "description": "Lecture 6 - plan",
   "main": "index.js",
   "scripts": {
-    "start": "cd server && npm start",
+    "start:client" : "cd client && npm install",
+    "start:server": "cd server && npm start",
     "build": "cd server && npm install",
     "test": "jest --collectCoverage",
-    "verify": "jest --collectCoverage"
+    "verify": "jest --collectCoverage",
+    "start": "npm run start:client && npm run start:server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pg6301-fall2022/l6_offline.git"
   },
   "keywords": [],
   "author": "",
