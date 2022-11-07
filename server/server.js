@@ -3,10 +3,12 @@ import express from "express";
 const app = express();
 
 app.get("/login", (req, res, next) => {
+   console.log("I'm getting it!")
    res.json({username: "Testsson"});
 });
 
 app.post("/login", (req, res, next) =>{
+   console.log("On the way!")
    res.sendStatus(401);
 });
 
